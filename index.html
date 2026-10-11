@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#713f50">
+  <meta name="description" content="A wedding guest dress rental concept. Discover a curated edit for your celebration, save your favorites, and try a demo reservation.">
+  <title>The Wedding Wardrobe — Your wedding style room</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/fonts/bodoni-moda.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./assets/js/rental-store.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.4 4.6a5.5 5.5 0 0 0-7.8 0L12 5.2l-.6-.6a5.5 5.5 0 0 0-7.8 7.8L12 20.8l8.4-8.4a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 5h12v12H2V5Zm12 5h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 32 32"><path d="M16 15C5-3 1 12 13 16 1 20 5 35 16 18c11 17 15 2 3-2C31 12 27-3 16 15Z"/><circle cx="16" cy="16" r="2"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z"/></symbol>
+  </svg>
+  <a href="#main" class="skip-link">Skip to the wedding edit</a>
+  <div class="announcement">ONE CELEBRATION. ONE LOOK PER STYLE. ALL THE JOY.</div>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="The Wedding Wardrobe home"><svg class="brand-flower"><use href="#i-flower"/></svg><span>the wedding<br><strong>wardrobe</strong></span></a>
+    <nav aria-label="Main navigation"><a href="#wedding-edit">The wedding edit</a><a href="#how-it-works">How it works</a></nav>
+    <button class="my-looks-button" id="my-looks-button"><svg class="icon"><use href="#i-heart"/></svg><span>My looks</span><span class="count" id="saved-count">0</span></button>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="little-line"></span>YOU'RE INVITED TO DRESS BEAUTIFULLY</span>
+        <h1 id="hero-title">A beautiful day.<br>A look that's<br><em>uniquely yours.</em></h1>
+        <p>A wedding on the calendar. Something lovely to wear.<br class="desktop-break"> Rent a look you love, chosen for the celebration.</p>
+        <a class="button button-primary" href="#wedding-edit">Find your wedding look <svg class="icon"><use href="#i-arrow"/></svg></a>
+        <div class="hero-footnote"><svg class="icon"><use href="#i-flower"/></svg><span>A little less shopping. A little more celebrating.</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-caption">THE OCCASION IS SPECIAL. YOUR LOOK SHOULD BE, TOO.</div>
+        <img class="hero-image" src="./assets/images/hero-wedding.jpg" alt="A sunlit garden wedding reception with flowers and a beautifully set table" width="1800" height="1200" fetchpriority="high">
+        <div class="invitation-card">
+          <svg class="invitation-flower"><use href="#i-flower"/></svg>
+          <span class="invitation-small">CELEBRATE WITH US</span>
+          <span class="invitation-names" id="hero-room-names">Emma &amp; James</span>
+          <span class="invitation-date" id="hero-room-date">JUNE 12, 2027 · THE GLASSHOUSE</span>
+          <a href="#wedding-edit">Your wedding wardrobe awaits <svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+        <span class="hero-side-note">FOR THE MOMENTS WORTH DRESSING UP FOR</span>
+      </div>
+    </section>
+    <div class="promise-strip" aria-label="Rental concept benefits">
+      <span><svg class="icon"><use href="#i-flower"/></svg>One style, one guest per wedding</span>
+      <span><svg class="icon"><use href="#i-truck"/></svg>Round-trip delivery included</span>
+      <span><svg class="icon"><use href="#i-sparkle"/></svg>Wear, return, repeat the joy</span>
+    </div>
+    <section class="wedding-edit section-wrap" id="wedding-edit" aria-labelledby="edit-title">
+      <div class="section-heading"><span class="eyebrow">THE WEDDING EDIT</span><h2 id="edit-title">For their day.<br><em>For your kind of beautiful.</em></h2><p>A considered collection for your celebration. Choose your favorite<br class="desktop-break"> and make it yours for the wedding.</p></div>
+      <div class="room-card">
+        <div class="room-monogram" id="room-monogram" aria-hidden="true">E<span>&amp;</span>J</div>
+        <div class="room-details"><span class="room-label">YOUR WEDDING STYLE ROOM <span class="preview-tag">Sample wedding</span></span><h3 id="room-names">Emma &amp; James</h3><p><span id="room-date">Saturday, June 12, 2027</span><span class="dot">·</span><span id="room-location">The Glasshouse, St. Louis</span></p></div>
+        <div class="room-dresscode"><span class="eyebrow">DRESS CODE</span><strong id="room-dresscode">Garden formal</strong><span id="room-palette">Soft florals, pastels &amp; a little romance</span></div>
+        <button class="button button-outline button-small" id="change-wedding">Change wedding <svg class="icon"><use href="#i-chevron"/></svg></button>
+      </div>
+      <div class="catalog-controls">
+        <div class="filter-chips" role="group" aria-label="Filter by occasion style"><button class="filter-chip active" data-filter="all" aria-pressed="true">All looks</button><button class="filter-chip" data-filter="garden" aria-pressed="false">Garden romance</button><button class="filter-chip" data-filter="evening" aria-pressed="false">Evening elegance</button><button class="filter-chip" data-filter="modern" aria-pressed="false">Modern classics</button></div>
+        <label class="search-field"><svg class="icon"><use href="#i-search"/></svg><input id="dress-search" type="search" placeholder="Find a color or a look" aria-label="Search dress names, colors and styles"></label>
+      </div>
+      <div class="catalog-meta"><span id="look-count" aria-live="polite">8 looks, thoughtfully chosen</span><div class="catalog-options"><label><span>Size</span><select id="size-filter" aria-label="Filter by size"><option value="all">All sizes</option><option>XS</option><option>S</option><option>M</option><option>L</option></select></label><label><span>Sort</span><select id="sort-filter" aria-label="Sort looks"><option value="edit">Our edit</option><option value="name">Name A–Z</option></select></label></div></div>
+      <div class="dress-grid" id="dress-grid"></div>
+      <div id="empty-catalog" class="empty-state" hidden><svg class="icon"><use href="#i-flower"/></svg><h3>Let's find your kind of lovely.</h3><p>No looks match these filters. Try another color, style, or size.</p><button class="button button-outline" id="clear-filters">See all looks</button></div>
+      <p class="edit-note"><svg class="icon"><use href="#i-check"/></svg>Reserved styles stay visible, but are unavailable for this wedding. One guest gets that look.</p>
+    </section>
+    <section class="how-section" id="how-it-works" aria-labelledby="how-title">
+      <div class="how-image"><img src="./assets/images/wedding-detail.jpg" alt="An intimate garden wedding table under olive trees" width="1600" height="1200" loading="lazy"><span class="image-note">Something borrowed.<br><em>Something beautiful.</em></span></div>
+      <div class="how-copy"><span class="eyebrow">LESS TO PLAN. MORE TO CELEBRATE.</span><h2 id="how-title">The occasion is theirs.<br><em>The moment is yours.</em></h2><div class="steps"><div class="step"><span class="step-number">01</span><div><h3>Find your celebration</h3><p>Enter your wedding code to discover an edit chosen for the day, the setting, and the dress code.</p></div></div><div class="step"><span class="step-number">02</span><div><h3>Make a look yours</h3><p>Explore the details, choose your size, and reserve. That style is set aside for you in this wedding room.</p></div></div><div class="step"><span class="step-number">03</span><div><h3>Wear it. Love it. Send it back.</h3><p>Your four-day rental includes delivery, a return label, and standard cleaning. You bring the celebration.</p></div></div></div><a class="text-link" href="#wedding-edit">Explore your wedding edit <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+    </section>
+    <section class="faq section-wrap" aria-labelledby="faq-title"><div><span class="eyebrow">A FEW THINGS TO KNOW</span><h2 id="faq-title">All dressed up.<br><em>All questions answered.</em></h2><p>A little clarity before the big day.</p></div><div class="faq-list"><details><summary>What does “one style, one guest” mean?</summary><p>A style and color can be reserved once within a wedding room. This classroom preview keeps reservations on your device only, so another device will not see your changes. A live service would need shared inventory. Guests renting elsewhere may have the same dress.</p></details><details><summary>How does the four-day rental work?</summary><p>The sample offer delivers your dress two days before the wedding. Return it using the included label at the end of the four-day rental. Your exact delivery and return dates appear before you confirm.</p></details><details><summary>How do I choose my size?</summary><p>Open a look to see its size guidance and choose an available size. Measurements in this prototype are illustrative; a real service would use verified measurements for each garment and offer help before you book.</p></details><details><summary>Will this website take a payment?</summary><p>No. This is an interactive classroom MVP. The dresses, weddings, prices, and reserved examples illustrate the proposed service. Demo checkout never asks for card details or charges you, and confirmation does not place a real order.</p></details><details><summary>Can I change or cancel my selection?</summary><p>Yes. Open “My looks,” choose Reservations, and cancel your demo reservation to make the style available again on this device. Favorites and reservations are separate for each sample wedding.</p></details></div></section>
+    <section class="closing-note"><svg class="closing-flower"><use href="#i-flower"/></svg><span class="eyebrow">FOR THE LOVE OF A GOOD CELEBRATION</span><h2>A dress for the day.<br><em>A memory for always.</em></h2><a class="button button-primary" href="#wedding-edit">Find your look <svg class="icon"><use href="#i-arrow"/></svg></a></section>
+  </main>
+  <footer class="site-footer"><a class="footer-wordmark" href="#">the wedding wardrobe</a><div><a href="#how-it-works">How it works</a><button data-open-info="details">Rental details</button><button data-open-info="credits">Photo credits</button></div><p>Wedding Style Room · MKT 5590 classroom MVP<br>Illustrative inventory. Demo reservations stay on this device. No payments or real orders.</p></footer>
+  <dialog id="room-dialog" class="dialog room-dialog" aria-labelledby="room-dialog-title"><button class="dialog-close" aria-label="Close wedding selection"><svg class="icon"><use href="#i-close"/></svg></button><div class="dialog-content"><svg class="dialog-flower"><use href="#i-flower"/></svg><span class="eyebrow">EVERY WEDDING HAS ITS OWN STORY</span><h2 id="room-dialog-title">Find your<br><em>celebration.</em></h2><p>Enter the code on your invitation, or try one of our sample wedding rooms.</p><form id="room-form" novalidate><label for="wedding-code">Wedding code</label><div class="code-input-row"><input id="wedding-code" placeholder="e.g. EJ2027" autocomplete="off" maxlength="20" required aria-describedby="room-error"><button class="button button-primary" id="join-wedding-button">Enter room <svg class="icon"><use href="#i-arrow"/></svg></button></div><p class="field-error" id="room-error" hidden></p></form><div class="sample-rooms"><button data-room="emma-james"><span>Emma &amp; James</span><small>Garden formal · June 12, 2027</small><strong>EJ2027 <svg class="icon"><use href="#i-arrow"/></svg></strong></button><button data-room="olivia-noah"><span>Olivia &amp; Noah</span><small>Coastal cocktail · August 21, 2027</small><strong>ON2027 <svg class="icon"><use href="#i-arrow"/></svg></strong></button></div><p class="subtle-note">Sample rooms are public previews, not private guest access.</p></div></dialog>
+  <dialog id="look-dialog" class="dialog look-dialog" aria-labelledby="look-title"><button class="dialog-close" aria-label="Close look details"><svg class="icon"><use href="#i-close"/></svg></button><div class="look-layout"><div class="look-photo"><img id="look-image" src="./assets/images/dress-01.jpg" alt="" width="1100" height="1650"><span class="look-photo-label">A LITTLE MOMENT OF LOVELY</span></div><div id="look-content" class="look-content"></div></div></dialog>
+  <dialog id="my-looks-dialog" class="dialog my-looks-dialog" aria-labelledby="my-looks-title"><button class="dialog-close" aria-label="Close my looks"><svg class="icon"><use href="#i-close"/></svg></button><div class="dialog-content"><span class="eyebrow">YOUR LITTLE COLLECTION</span><h2 id="my-looks-title">Looks to<br><em>fall in love with.</em></h2><p id="my-looks-room"></p><div class="my-tabs" role="tablist" aria-label="My looks"><button role="tab" aria-selected="true" data-my-tab="saved">Saved looks</button><button role="tab" aria-selected="false" data-my-tab="reservations">Reservations</button></div><div id="my-looks-list" role="tabpanel"></div></div></dialog>
+  <dialog id="cancel-dialog" class="dialog small-dialog" aria-labelledby="cancel-title"><div class="dialog-content"><span class="eyebrow">A CHANGE OF PLANS?</span><h2 id="cancel-title">Release this look?</h2><p>Your demo reservation will be removed and this style will become available again on this device.</p><div class="dialog-actions"><button class="button button-outline" id="keep-reservation">Keep reservation</button><button class="button button-primary" id="confirm-cancel">Cancel demo reservation</button></div></div></dialog>
+  <dialog id="info-dialog" class="dialog info-dialog" aria-labelledby="info-title"><button class="dialog-close" aria-label="Close information"><svg class="icon"><use href="#i-close"/></svg></button><div class="dialog-content"><span class="eyebrow">THE WEDDING WARDROBE</span><h2 id="info-title">The finer details.</h2><div id="info-content"></div></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">Please enable JavaScript to browse the wedding edit and try a demo reservation.</div></noscript>
+</body>
+</html>

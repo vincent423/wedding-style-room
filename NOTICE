@@ -1,0 +1,18 @@
+LICENSE SCOPE
+
+The MIT license in LICENSE applies to this project's original HTML, CSS,
+JavaScript, tests, documentation, and SVG favicon.
+
+Third-party photographs in assets/images/ and font files in assets/fonts/
+are excluded from the MIT license. Their respective owners retain their
+rights. The project license does not grant permission to use or redistribute
+these third-party materials.
+
+Wedding photographs are from Pexels. Dress photographs are retailer images
+from Petal & Pup; they are illustrative classroom imagery, not open-source
+or verified rental inventory. Exact sources and usage context are recorded
+in assets/image-credits.json.
+
+The Bodoni Moda and DM Sans fonts are licensed separately under the SIL Open
+Font License 1.1. Both full license texts and copyright notices are included
+in assets/fonts/. Keep those notices with the font files.
