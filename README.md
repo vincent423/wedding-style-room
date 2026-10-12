@@ -2,6 +2,8 @@
 
 An English wedding guest dress rental MVP for MKT 5590. The customer enters a wedding-specific style room, discovers an edit for the occasion, and tries reserving a look. The visual direction combines wedding invitation typography, blush and wine colors, garden wedding photography, and an eight-look boutique catalog.
 
+[Open the demo website](https://vincent423.github.io/wedding-style-room/) · [Browse the source repository](https://github.com/vincent423/wedding-style-room)
+
 ## What works
 
 - Two sample weddings: **EJ2027** (Emma & James, garden formal) and **ON2027** (Olivia & Noah, coastal cocktail).
